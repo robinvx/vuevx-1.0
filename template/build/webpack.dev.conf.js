@@ -92,7 +92,7 @@ module.exports = new Promise((resolve, reject) => {
             {
                 // prevent BrowserSync from reloading the page 
                 // and let Webpack Dev Server take care of this 
-                reload: false
+                reload: true
             }
         )
       )
