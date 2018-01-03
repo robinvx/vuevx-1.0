@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vue-cli": "^2.8.1"
+  },
+  "dependencies": {
+    "imagemin-webpack-plugin": "^1.5.2"
   }
 }

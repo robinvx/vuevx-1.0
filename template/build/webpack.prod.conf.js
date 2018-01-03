@@ -58,6 +58,13 @@ const webpackConfig = merge(baseWebpackConfig, {
         ? { safe: true, map: { inline: false } }
         : { safe: true }
     }),
+      // compress images
+    new ImageminPlugin({
+        disable: process.env.NODE_ENV !== 'production', // Disable during development
+        pngquant: {
+            quality: '85-90'
+        }
+    }),
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
